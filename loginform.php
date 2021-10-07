@@ -8,6 +8,7 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+   <p><a href="loginform.php">Home</a> <a href="service.php">Services</a> <a href="logout.php">Logout</a></p>
 <form class="box" action="Login.php" method="POST">
    <h3>Please Enter your username and password</h3>
 UserName:<input type="text" name="UserName" width="300"height="300" value="<?php if(isset($_COOKIE['username'])){ echo $_COOKIE['username'];}     ?>">

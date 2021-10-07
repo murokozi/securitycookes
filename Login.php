@@ -15,7 +15,8 @@ $er=$_POST["Password"];
         $count = mysqli_num_rows($result);  
          
         if($count == 1){  
-            echo "<h1><center> Login successful </center></h1>";  
+            //echo "<h1><center> Login successful </center></h1>";  
+            include "home.php";
             if (!empty($_POST['name'])) {
                 $name=$_POST['name'];
           setcookie("username",$d,time()+3600*24*7);

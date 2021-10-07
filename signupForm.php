@@ -66,15 +66,16 @@ myInput.onkeyup = function() {
 }
 
 </script>
+<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<marquee direction="right"><h3>Thank you for signing at this website!</h3></marquee>
-<center><form action="signup.php" method="POST">
-FirstName: <input type="text"name="FirstName"><br><br>
-LastName:&nbsp;<input type="text" name="LastName" width="300"height="300"><br><br>
-Email: <input type="email"name="Email" width="300"height="300"required><br><br>
-UserName:<input type="text"name="UserName" width="300"height="300"><br><br>
-Password:&nbsp;&nbsp;<input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 10 or more characters" name="Password" required><br>
+<center><form class="sin"action="signup.php" method="POST">
+  <h3> Sign in form</h3>
+FirstName: <input type="text"name="FirstName">
+LastName:&nbsp;<input type="text" name="LastName" width="300"height="300">
+Email: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email"name="Email" width="300"height="300"required><br><br>
+UserName:<input type="text"name="UserName" width="300"height="300">
+Password:&nbsp;&nbsp;<input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 10 or more characters" name="Password" required><br><br>
 <button type="submit" name="signup">SignUp</button>
    <p> Already signed up? <a href="loginForm.php">Log in</a> </p>
 </form></center>

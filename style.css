@@ -9,9 +9,9 @@ body{
 	padding: 40px;
 	position: absolute;
 	top: 50%;
-	left: 50;
+	left: 50%;
 	transform: translate(-50%,-50%);
-	background: #191919;
+	background: #D5D6EA;
 	text-align: center;
 }
 .box input[type = "text"],.box[type ="password"]{
@@ -46,3 +46,33 @@ border: 0;
 	.box input[type = "submit"]:hover{
 		background: #2ecc71;
 	}
+	 .box h3{
+             color: black;
+             font-weight: 500;
+	}
+	.sin{
+		width: 300px;
+	padding: 40px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: #D5D6EA;
+	text-align: center;
+
+	}
+	
+	.sin input[type = "text"],.sin[type ="password"]{
+	border: 0;
+	background: none;
+	display: block;
+	margin: 15px auto;
+	text-align: center;
+	border: 2px solid #3498db;
+	padding: 11px 7px;
+	width: 200px;
+	outline: none;
+	color: white;
+	border-radius: 30px;
+	transition: 0.25s;
+}

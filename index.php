@@ -9,7 +9,7 @@ if(!isset($_SESSION['k1'])){
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width , initial-scale=1.0">
 <title>Welcome</title>
-<p><a href="logout.php.php">logout.php</a> </p>
+<p><a href="logout.php">Logout</a> </p>
 </head>
 <body>
 	

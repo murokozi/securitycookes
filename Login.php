@@ -7,8 +7,10 @@
 <?php
 include 'database.php';
 $d=$_POST["UserName"];
-$e=sha1($_POST["Password"]);
-$er=$_POST["Password"];
+$e=$_POST["Password"];
+
+ $salt="salting" .$sat;
+  $e=hash('sha1',$salt);
    $sql = "select *from users_tbl where UserName = '$d' and Password = '$e'";  
         $result = mysqli_query($conn, $sql);  
         $row = mysqli_fetch_array($result, MYSQLI_ASSOC);  
@@ -30,13 +32,13 @@ $query = "SELECT * FROM users_tbl WHERE status='Verified' ";
             if (!empty($_POST['name'])) {
                 $name=$_POST['name'];
           setcookie("username",$d,time()+3600*24*7);
-          setcookie("password",$er,time()+3600*24*7);
+          setcookie("password",$e,time()+3600*24*7);
           setcookie("remember",$name,time()+3600*24*7);
             }
             else
             {
                 setcookie("username",$d,2);
-                setcookie("password",$er,2);
+                setcookie("password",$e,2);
             }
         } 
         header("location:logs.php");

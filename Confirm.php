@@ -6,6 +6,7 @@ if (isset($_POST['Reset'])) {
   $password=$_POST['newpass'];
   $passwordrepeat=$_POST['repass'];
   
+  
  if ($password!=$passwordrepeat) {
     echo '<script language="javascript">';
 echo 'alert("password are not matching ...");';

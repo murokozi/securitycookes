@@ -14,8 +14,8 @@
 UserName:<input type="text" name="UserName" width="300"height="300" value="<?php if(isset($_COOKIE['username'])){ echo $_COOKIE['username'];}     ?>">
 Password:&nbsp;&nbsp<input type="password"name="Password" width="300"height="300" value="<?php if(isset($_COOKIE['password'])){ echo $_COOKIE['password'];}     ?>"><br><br>
 <input type="checkbox" name="name" <?php if(isset($_COOKIE['username'])){ echo 'checked';}     ?>>Remember me<br><br>
-<button type="submit" name="login">Login</button>
-   <p> create account? <a href="signupForm.php">Sign Up</a> </p>
+<button type="submit" name="login">Login</button> <button><a href="forget.php">Forget</a></button>
+   <p> create account? <a href="signupForm.php">Sign Up</a> </p> 
 </form>
 </body>
 </html>
